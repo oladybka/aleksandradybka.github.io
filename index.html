@@ -8,27 +8,44 @@
     body {
       font-family: "Segoe UI", sans-serif;
       margin: 40px auto;
-      max-width: 900px;
+      max-width: 1100px;
       color: #333;
       line-height: 1.6;
     }
+
     h1, h2 {
       color: #2b5b84;
     }
+
     a {
       color: #007acc;
       text-decoration: none;
     }
+
     a:hover {
       text-decoration: underline;
     }
-    .project {
-      margin-bottom: 25px;
-      padding: 15px;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      background-color: #f9f9f9;
+
+    /* KAFELKI / GRID */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
     }
+
+    .card {
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid #ddd;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    .card h3 {
+      margin-top: 0;
+    }
+
   </style>
 </head>
 <body>
@@ -38,7 +55,9 @@
   <strong>Python</strong>, <strong>SQL</strong>, and <strong>Tableau</strong>.
   I enjoy transforming data into insights through cleaning, exploration, and visualization.</p>
 
- <div class="project">
+
+  <!-- MASTER'S THESIS -->
+  <div class="card" style="margin-top:30px;">
     <h3>📘 Master's Thesis Project</h3>
     <p>
         My analytical journey began when I chose the topic for my master's thesis.
@@ -47,24 +66,57 @@
     </p>
     <p>
         You can view the latest version of my thesis here:
-        <a href="Magisterka..pdf" target="_blank">Magisterka..pdf</a>
+        <a href="Magisterka_upwr.pdf" target="_blank">Magisterka.pdf</a>
     </p>
-</div>
+  </div>
 
-  <h2>📊 Projects</h2>
 
-  <div class="project">
-  <h3>🐍 Python Project 1</h3>
-  <p>Exploratory data analysis in Python – cleaning and visualizing data using pandas and matplotlib.</p>
-  <p><a href="https://github.com/oladybka/portfolio.github.io/blob/main/python_project.ipynb">View Notebook →</a></p>
-</div>
+  <!-- PYTHON PROJECTS -->
+  <h2>🐍 Python Projects</h2>
+  <div class="grid">
 
-<div class="project">
-  <h3>🐍 Python Project 2</h3>
-  <p>Second data analysis project in Python with additional data transformations.</p>
-  <p><a href="https://github.com/oladybka/portfolio.github.io/blob/main/python_project2.ipynb">View Notebook →</a></p>
-</div>
+    <div class="card">
+      <h3>Python Project 1</h3>
+      <p>Exploratory data analysis in Python – cleaning and visualizing data using pandas and matplotlib.</p>
+      <p><a href="https://github.com/oladybka/portfolio.github.io/blob/main/python_project.ipynb">View Notebook →</a></p>
+    </div>
 
+    <div class="card">
+      <h3>Python Project 2</h3>
+      <p>Second data analysis project in Python with additional data transformations.</p>
+      <p><a href="https://github.com/oladybka/portfolio.github.io/blob/main/python_project2.ipynb">View Notebook →</a></p>
+    </div>
+
+  </div>
+
+
+  <!-- SQL PROJECTS -->
+  <h2>🛢 SQL Projects</h2>
+  <div class="grid">
+
+    <div class="card">
+      <h3>SQL Project (Example Placeholder)</h3>
+      <p>Your SQL project will appear here – e.g., data cleaning, joins, CTEs, window functions, analysis queries.</p>
+      <p><a href="#">Coming soon</a></p>
+    </div>
+
+  </div>
+
+
+  <!-- SQL + TABLEAU PROJECTS -->
+  <h2>📊 SQL + Tableau Projects</h2>
+  <div class="grid">
+
+    <div class="card">
+      <h3>SQL & Tableau Project (Example Placeholder)</h3>
+      <p>Dashboard built on top of SQL queries. Add link to Tableau Public or screenshots.</p>
+      <p><a href="#">Coming soon</a></p>
+    </div>
+
+  </div>
+
+
+  <!-- CONTACT -->
   <h2>📬 Contact</h2>
   <p>
     💼 <a href="https://www.linkedin.com/in/aleksandra-dybka-0b2614353">LinkedIn</a><br>
